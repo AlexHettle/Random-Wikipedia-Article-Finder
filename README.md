@@ -13,6 +13,6 @@ This program was created in order to enhance my skills in web scraping and makin
 What you will need to run this program:<br>
 - <em>Python</em>- To run this program, you must have some way to run a .py file. Also, this program was written using python 3.8.3, and has not been tested using any other version. You will also have to install <em>requests</em> and <em>bs4</em> to use the program.
 ## How to Use <a name="usage"></a>
-After installing and adding everything necessary, all you need to do is run the program, and press the GENERATE button to get a hyperlink to a new Wikipedia article.
+After installing and adding everything necessary, all you need to do is run the program, and press the GENERATE NEW ARTICLE button to get a hyperlink to a new Wikipedia article.
 ## Author <a name = "authors"></a>
 [@AlexHettle](https://github.com/AlexHettle) - Sole author of project
