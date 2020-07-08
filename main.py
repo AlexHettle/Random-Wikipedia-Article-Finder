@@ -1,8 +1,12 @@
 import requests, webbrowser
 from bs4 import BeautifulSoup
 from tkinter import *
+#A function that takes a link and opens it in the users preferred browser
 def callback(url):
     webbrowser.open_new(url)
+#A function called when the GENERATE NEW ARTICLE button is pressed.
+#The function gets a random Wikipedia article and uses that article
+#to create a hyperlink for the user
 def get_article(link):
     random_link="https://en.wikipedia.org/wiki/Special:Random"
     new_link="https://en.wikipedia.org/wiki/"
@@ -12,6 +16,7 @@ def get_article(link):
     new_link+=name.replace(" ","_")
     link.configure(text="\n"+name,fg="blue",font=("Verdana 20 underline"))
     link.bind("<Button-1>", lambda e:callback(new_link))
+#This chunk of code sets up the GUI for the app
 window=Tk()
 the_canvas=Canvas(window,width=500,height=240, highlightthickness=0,bg="#80e2ee")
 the_canvas.create_oval(0,0,500,207,fill="white",outline="")
